@@ -1,0 +1,47 @@
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #8eb69b;
+}
+
+/* class=logo WHERE? */ 
+.logo {
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+}
+
+/* What? inline-block class what? OwO*/
+nav {
+    width: 73%;
+    padding: 1%;
+}
+
+ul {
+    width: 50%;
+    margin-left: auto;
+    background-color: #235347;
+}
+
+/* it's still fkn huge */
+.heroImg {
+    height: 600px;
+    padding: 25px;
+    background-color: #deb992;
+}
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+    background-color: #c89666;
+}
+
+footer {
+    background-color: #373738;
+    padding: 10px;
+}
+
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;

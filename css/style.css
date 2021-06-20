@@ -1,47 +1,311 @@
-.inline-block {
-    display: inline-block;
-    vertical-align: top;
-    background-color: #8eb69b;
+/* Global */
+body{
+    margin: 0;
+    background-color: var(--offcolor1); 
 }
 
-/* class=logo WHERE? */ 
-.logo {
-    width: 23%;
-    padding: 1%;
+:root {
+    --base1light: #DEB992;
+    --base1: #E1B382;
+    --base1dark: #C89666;
+
+    --base2lightest: #DAF1DE;
+    --base2lighter: #8EB69B;
+    --base2light: #235347;
+    --base2: #1BA098;
+    --base2dark: #2d545e;
+    --base2darker: #12343b;
+    --base2darkest: #051622;
+
+    --offcolor1: #FFFFFF;
+    --offcolor2: #E7E7E7;
+    --offcolor3: #434343;
+
+  }
+
+  button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+
+/* Nav */
+.navigation {
+    width: 100%;
+    display: inline-block;
+}
+
+.nav-content{
+    padding: 10px;
+}
+
+.nav-logo{
+    display: inline-block;
+}
+
+.nav-logo-img{
+    width: 75px;
+    height: auto;
+}
+
+/* This banner is problematic when trying to be responsive. Need a reference as to how I want it to look on smaller screens*/
+.nav-banner{
+    display: inline-block;
+    position: absolute;
+    margin-left: 20px;
+    width: 40%;
+    height: 700px;
+    top: 0;
+    background-color: var(--base2lighter);  
+}
+
+.nav-banner-text-container{
+    width: 100%;
+    position: absolute;
+    bottom: 75px;
+    left: 0;
+}
+
+.nav-banner-text-one{
+    font-size: 64px;
+    color: var(--offcolor1);
+    margin: 0;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+.nav-banner-text-two{
+    font-size: 56px;
+    color: var(--offcolor2);
+    margin: 0;
+    margin-left: 20px;
+}
+
+
+.nav-banner-text-three{
+    font-size: 82px;
+    color: var(--offcolor3);
+    margin: 0;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-/* What? inline-block class what? OwO*/
-nav {
-    width: 73%;
-    padding: 1%;
+.nav-banner-text-four{
+    font-size: 48px;
+    color: var(--offcolor3);
+    margin: 0;
+    text-align: center;
 }
 
-ul {
-    width: 50%;
-    margin-left: auto;
-    background-color: #235347;
-}
-
-/* it's still fkn huge */
-.heroImg {
-    height: 600px;
-    padding: 25px;
-    background-color: #deb992;
-}
-
-.content {
-    width: 500px;
+.resume-button {
+    background-color: var(--base2); 
+    text-align: center;
+    display: block;
     margin: 0 auto;
-    background-color: #c89666;
+    margin-top: 50px;
+  }
+
+.nav-list{
+    margin: 10px;
+    font-size: 27px;
+    float: right;
 }
 
-footer {
-    background-color: #373738;
-    padding: 10px;
+.nav-link {
+    text-decoration: none;
+    color: var(--offcolor3)
 }
 
-footer ul {
-    display: inline-block;
-    vertical-align: top;
-    padding: 10px;
+
+/* Hero */
+
+.hero-section {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    background-color: var(--base1light);
+}
+
+.hero-img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.hero-flex-container{
+    flex: 1;
+}
+
+.hero-flex-container-img{
+    flex: 1;
+    position: relative;
+}
+
+/* About Me */
+
+.about-me-section {
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+
+.about-me-img-container {
+   flex: 1;
+   text-align: center;
+}
+
+.about-me-container {
+    flex: 1;
+}
+
+.about-me-img{
+    width: 400px;
+    height: auto;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.about-me-text {
+    padding: 15px;
+    font-size: 32px;
+    line-height: 44px;
+}
+
+/* Traits */
+
+.traits-section{
+    width: 100%;
+    height: 700px;
+    color: red;
+    display: flex;
+}
+
+.trait{
+    flex: 1;
+    margin: 50px;
+    background-color: var(--offcolor2);
+}
+
+/* Portfolio */
+
+.portfolio-section{
+    width: 100%;
+}
+
+.portfolio-entry{
+    width: 100%;
+    height: 500px;  
+    margin-bottom: 25px;
+    display: flex;
+}
+
+.portfolio-entry:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.portfolio-img-container{
+    flex: 1;
+    text-align: center;
+}
+
+.portfolio-img{
+    flex: 1;
+    width: 350px;
+    height: 350px;
+    margin-top: 75px;
+    background-color: var(--offcolor2);
+}
+
+.portfolio-container{
+    flex: 1;
+    background-color: var(--base1light);
+
+}
+.portfolio-text-container{
+    margin-left: 20%;
+    text-align: left;
+}
+
+.portfolio-header{
+    font-size: 36px;
+}
+    
+
+.portfolio-text{
+    font-size: 28px;
+}
+
+.learn-more-button {
+    background-color: var(--base2); 
+  }
+
+/* Marketing Section */
+
+.marketing-section{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.marketing-container {
+    width: 80%;
+    height: 600px;
+    display: block;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: var(--offcolor2); 
+}
+
+.annotation{
+    font-size: 22px;
+}
+
+.title{
+    font-size: 48px;
+    margin: 0;
+}
+
+.subtitle{
+    font-size: 32px;
+}
+
+.social-media-links{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.social-media-link{
+   margin-bottom: 35px;
+}
+
+.social-media-icon{
+    width: 36px;
+    height: 36px;
+    vertical-align: middle;
+    margin-right: 24px;
+}
+.social-media-link-text{
+    font-size: 22px;
+}
+
+/* Footer Section */
+
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: var(--offcolor3); 
+}
